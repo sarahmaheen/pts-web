@@ -22,7 +22,7 @@
 //     e.preventDefault();
 //     try {
 //       const therapistIdsArray = therapistIds.split(',').map(id => id.trim());
-//       const response = await axios.post('http://localhost:3001/api/add-therapy', {
+//       const response = await axios.post('https://pts-web.onrender.com/api/add-therapy', {
 //         therapyName,
 //         therapistIds: therapistIdsArray,
 //         plan: plans,
@@ -178,7 +178,7 @@
 //   useEffect(() => {
 //     const fetchTherapists = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:3001/api/therapists');
+//         const response = await axios.get('https://pts-web.onrender.com/api/therapists');
 //         setTherapists(response.data);
 //       } catch (error) {
 //         console.error('Error fetching therapists:', error);
@@ -202,7 +202,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post('http://localhost:3001/api/add-therapy', {
+//       const response = await axios.post('https://pts-web.onrender.com/api/add-therapy', {
 //         therapyName,
 //         therapistIds,
 //         plan: plans,
@@ -356,7 +356,7 @@
 //   useEffect(() => {
 //     const fetchTherapists = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:3001/api/therapists');
+//         const response = await axios.get('https://pts-web.onrender.com/api/therapists');
 //         setTherapists(response.data);
 //       } catch (error) {
 //         console.error('Error fetching therapists:', error);
@@ -380,7 +380,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post('http://localhost:3001/api/add-therapy', {
+//       const response = await axios.post('https://pts-web.onrender.com/api/add-therapy', {
 //         therapyName,
 //         therapistIds,
 //         plan: plans,
@@ -552,7 +552,7 @@
         useEffect(() => {
             const fetchTherapists = async () => {
                 try {
-                    const response = await axios.get('http://localhost:3001/api/therapists');
+                    const response = await axios.get('https://pts-web.onrender.com/api/therapists');
                     setTherapists(response.data);
                 } catch (error) {
                     console.error('Error fetching therapists:', error);
@@ -586,7 +586,7 @@
                 console.log( therapyName,
                     therapistIds, // Sending the array of therapist IDs
                     formattedPlans) // Sending the formatted plans)
-                const response = await axios.post('http://localhost:3001/api/add-therapy', {
+                const response = await axios.post('https://pts-web.onrender.com/api/add-therapy', {
                     therapyName,
                     therapistIds, // Sending the array of therapist IDs
                     plan: formattedPlans // Sending the formatted plans

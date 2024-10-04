@@ -23,7 +23,7 @@ function AddPatient() {
   useEffect(() => {
     const fetchTherapies = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/therapies", {
+        const response = await axios.get("https://pts-web.onrender.com/api/therapies", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`, // Add JWT token
           },
@@ -36,7 +36,7 @@ function AddPatient() {
 
     const fetchTherapists = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/therapists", {
+        const response = await axios.get("https://pts-web.onrender.com/api/therapists", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`, // Add JWT token
           },
@@ -62,7 +62,7 @@ function AddPatient() {
     setSuccessMessage("");
 
     try {
-      const response = await axios.post("http://localhost:3001/api/add-patient", patientData, {
+      const response = await axios.post("https://pts-web.onrender.com/api/add-patient", patientData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

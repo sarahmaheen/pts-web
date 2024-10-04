@@ -10,7 +10,7 @@ const GetAllTherapies = () => {
     useEffect(() => {
         const fetchTherapies = async () => {
             try {
-                const response = await axios.get('http://localhost:3001/api/therapies');
+                const response = await axios.get('https://pts-web.onrender.com/api/therapies');
                 setTherapies(response.data);
             } catch (error) {
                 console.error('Error fetching therapies:', error);

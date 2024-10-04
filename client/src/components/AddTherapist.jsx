@@ -21,7 +21,7 @@ const AddTherapist = () => {
         const token = localStorage.getItem("token");
 
         try {
-            const response = await axios.post("http://localhost:3001/api/add-therapist", therapistData, {
+            const response = await axios.post("https://pts-web.onrender.com/api/add-therapist", therapistData, {
                 headers: { Authorization: `Bearer ${token}` },
             });
             alert(response.data.message);
